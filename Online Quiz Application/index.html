@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0" />
+	<link rel="stylesheet"
+		href="./style.css" />
+	<title>School Of Engineering & Computing - DBUU</title>
+</head>
+
+<body>
+	<div class="containerNew"  style="background-color: rgb(250, 195, 195);">
+		<header>
+			<div>
+				<a href="./highscore.html">
+					<button class="scores-header"
+							id="view-high-scores">
+						View Scores
+					</button>
+				</a>
+			</div>
+
+			<div class="timer">
+				<p>
+					Time:
+					<span id="timer">
+						0
+					</span>
+				</p>
+			</div>
+		</header>
+
+		<main class="quiz">
+			<div id="quiz-start">
+				<div class="landing"
+					id="start-screen">
+					
+						<img src="https://assets.isu.pub/document-structure/221021084827-30f1af3fb1079c02456b7cfbb36121a8/v1/0a8f895a7068de5e7487492afe376f73.jpeg" height=100em>
+					
+					<h1>
+						Coding Quiz Challenge
+					</h1>
+					<p>
+						Try to answer the following
+						questions with
+						in the time limit. Keep in
+						mind that incorrect answers
+						will penalize your score/time
+						by ten seconds!
+					</p>
+					<button id="start">
+						Start Quiz
+					</button>
+				</div>
+			</div>
+
+			<div class="hide" id="questions">
+				<h2 id="question-words"></h2>
+				<div class="options" id="options">
+				</div>
+			</div>
+
+			<div class="hide" id="quiz-end">
+				<h2>All Done!</h2>
+				<p>Your final score is:
+					<span id="score-final">
+					</span>
+				</p>
+                <p>Regards, Aakash Kaushik (B.TECH CSE, SoEC) </p>
+                <hr>
+				<p>
+					Please enter your name:
+					<input type="text"
+						id="name"
+						max="3" />
+					<button id="submit-score">
+						Submit
+					</button>
+				</p>
+			</div>
+
+			<div id="feedback"
+				class="feedback hide">
+			</div>
+		</main>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
